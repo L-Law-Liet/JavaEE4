@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<!--    Task 1.2-->
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.ServletSession.first.part2.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.example.ServletSession.first.part2.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.example.ServletSession.first.part2.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+<!--   Task 2.1 -->
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>com.example.ServletSession.second.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/second-servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.example.ServletSession.second.Second2Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/second-servlet2</url-pattern>
+    </servlet-mapping>
+
+    <!--   Task 3.1 -->
+    <servlet>
+        <servlet-name>third-s1</servlet-name>
+        <servlet-class>com.example.ServletSession.third.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>third-s1</servlet-name>
+        <url-pattern>/third-servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>third-s2</servlet-name>
+        <servlet-class>com.example.ServletSession.third.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>third-s2</servlet-name>
+        <url-pattern>/third-servlet2</url-pattern>
+    </servlet-mapping>
+
+    <!--   Task 4.1 -->
+    <servlet>
+        <servlet-name>fourth-s1</servlet-name>
+        <servlet-class>com.example.ServletSession.fourth.part1.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>fourth-s1</servlet-name>
+        <url-pattern>/fourth-servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>fourth-s2</servlet-name>
+        <servlet-class>com.example.ServletSession.fourth.part1.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>fourth-s2</servlet-name>
+        <url-pattern>/fourth-servlet2</url-pattern>
+    </servlet-mapping>
+
+    <!--   Task 4.2 -->
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>fourth-part2-LoginServlet</servlet-name>
+        <servlet-class>com.example.ServletSession.fourth.part2.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fourth-part2-LoginServlet</servlet-name>
+        <url-pattern>/fourth-part2-LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>fourth-part2-ProfileServlet</servlet-name>
+        <servlet-class>com.example.ServletSession.fourth.part2.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fourth-part2-ProfileServlet</servlet-name>
+        <url-pattern>/fourth-part2-ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>fourth-part2-LogoutServlet</servlet-name>
+        <servlet-class>com.example.ServletSession.fourth.part2.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fourth-part2-LogoutServlet</servlet-name>
+        <url-pattern>/fourth-part2-LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/first/part2/index.html</welcome-file>
+<!--        <welcome-file>/second/index.html</welcome-file>-->
+<!--        <welcome-file>/third/index.html</welcome-file>-->
+<!--        <welcome-file>/fourth/part1/index.html</welcome-file>-->
+<!--        <welcome-file>/fourth/part2/index.html</welcome-file>-->
+    </welcome-file-list>
+</web-app>
